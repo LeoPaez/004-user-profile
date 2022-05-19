@@ -1,0 +1,99 @@
+:root {
+    --blanco: #FFF;
+    --negro: #000;
+    --btn-blanco: #FFEDD2;
+}
+@font-face {
+    font-family: 'roboto';
+    src: url(/fonts/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: 'roboto-medium';
+    src: url(/fonts/Roboto-Medium.ttf);
+}
+html {
+    /* 1rem = 10px */
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+body {
+    font-family: 'roboto', sans-serif;
+    font-size: 1.6rem;
+    background: rgb(234,209,238);
+    background: linear-gradient(150deg, rgb(230, 201, 235) 0%, rgba(255,240,195,1) 50%, rgba(255,255,255,1) 100%);
+    background-size: cover;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 489px;
+    height: 458px;
+    background-color: var(--blanco);
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    border-radius: 4rem;
+    padding: 4rem;
+}
+.card__img {
+    width: 120px; /* width of container */
+    height: 120px; /* height of container */
+    object-fit: cover;
+    object-position: 70% 10%; /* try 20px 10px */ 
+    border-radius: 15%;
+    box-shadow: 1px 1px 31px 4px rgba(0,0,0,0.26);
+    -webkit-box-shadow: 1px 1px 31px 4px rgba(0,0,0,0.26);
+    -moz-box-shadow: 1px 1px 31px 4px rgba(0,0,0,0.26);
+    margin-top: 3rem;
+}
+.card__titulo {
+    font-size: 2.2rem;
+    margin: 0;
+    margin-top: 3rem;
+}
+.card__p {
+    font-family: 'roboto-medium';
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    text-align: center;
+    padding: 0 6rem;
+    margin: 0;
+    margin: 1rem 0 2rem 0;
+}
+.btn {
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding: 1.8rem 4.5rem;
+    border-radius: 3rem;
+    border-style: none;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+.btn:hover{
+    box-shadow: 0px 15px 20px rgba(168, 166, 166, 0.4);
+    transform: translateY(-7px);
+}
+.card-btn1 {
+    background-image: linear-gradient(90deg, rgba(250,57,103,1) 0%, rgba(250,150,57,1) 50%);;
+}
+.card-btn2 {
+    background-color: var(--btn-blanco);
+}
+.btn__img {
+    width: 19px;
+    margin-right: 0.5rem;
+    position: relative;
+    top: 3px;
+}
